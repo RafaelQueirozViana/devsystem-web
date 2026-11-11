@@ -1,15 +1,17 @@
 
 import React from 'react'
+import "../Styles/Login.scss"
 
 export default function Login() {
    return (
         <>
         <main className='container login'>
          <section className='login-card'>
-            <h1>Login</h1>
-
+         
             <form action="#">
                <div className="form-container">
+
+                  <h1>Login</h1>
                <article className='form-control'>
                   <label htmlFor="email">Email</label>
                   <input type="text" id='email' placeholder='Type your email' />
@@ -25,7 +27,7 @@ export default function Login() {
             </form>
          </section>
         </main>
-        <h1>Login</h1>
+   
         </>
    )
 }
