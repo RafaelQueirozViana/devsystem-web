@@ -8,9 +8,11 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: $container-width;
-    margin: 40px auto;
+    margin: 0px auto;
 }
