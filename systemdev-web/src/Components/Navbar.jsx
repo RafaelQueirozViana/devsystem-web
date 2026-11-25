@@ -4,6 +4,12 @@ import "../Styles/Nav.scss";
 
 export default function Navbar() {
   const logado = sessionStorage.getItem("logado");
+
+  function sair() {
+    sessionStorage.removeItem("logado");
+    window.location.replace("/");
+  }
+
   return (
     <nav>
       <section className="container">
@@ -17,7 +23,9 @@ export default function Navbar() {
 
         {logado === "true" && (
           <>
-            <button>Sair</button>
+            <button className="btn-sair" onClick={sair}>
+              Sair
+            </button>
           </>
         )}
       </section>

@@ -3,6 +3,7 @@
 nav {
     background-color: $primary-color;
     padding: 20px;
+
     margin-bottom: 40px;
 
     a{
@@ -14,4 +15,19 @@ nav {
             color: $secondary-color;
         }
     }
+
+      .btn-sair {
+        padding: 8px 20px;
+        background-color: #e94949;
+        color: #fff;
+        border-radius: 16px;
+        cursor: pointer;
+        border: none;
+      }
+
+      .btn-sair:hover {
+   opacity: 0.8;
+        
+      }
+    
 }
