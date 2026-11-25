@@ -3,6 +3,7 @@ import Sobre from "../Pages/Sobre";
 import Login from "../Pages/Login";
 import Navbar from "../Components/Navbar";
 import HomeLogado from "../Pages/HomeLogado";
+import Pessoas from "../Pages/Pessoas";
 
 export default function Router() {
   const logado = sessionStorage.getItem("logado");
@@ -24,6 +25,11 @@ export default function Router() {
 
         {/* Redireciona rotas inexistentes para a pagina inicial */}
         <Route path="*" element={<Navigate to="/" replace />} />
+
+        <Route
+          path="/pessoas"
+          element={logado == "true" ? <Pessoas /> : <Navigate to="/" />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
